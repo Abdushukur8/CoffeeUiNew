@@ -61,11 +61,28 @@ body {
   font-weight: 400;
   color: #202020;
   line-height: 24px;
+  letter-spacing: 0%;
 }
 
 h1,h2,h3,h4,h5,h6{
   font-family:'Anton' ;
 }
+a{
+  text-decoration: none;
+}
+
+a, button, input, textarea, svg *{
+  transition-duration: 500ms ;
+}
+
+.container{
+  max-width: 1935px;
+  margin: 0 auto;
+}
+
+/* header  */
+
+/* welcome  */
 
 .header_welcome{
   display: flex;
@@ -80,4 +97,72 @@ h1,h2,h3,h4,h5,h6{
   color: #fff;
   font-size: 14px;
   letter-spacing: 0%;
+}
+
+/* welcome */
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 40px;
+  border: 1px solid #000;
+}
+
+.navbar_list{
+  display: inline-flex;
+  height: 100px;
+  align-items: center;
+  column-gap: 47px;
+}
+.navbar_list:last-child{
+  column-gap: 0;
+}
+
+.navbar_link{
+  font-size: 17px;
+  color: #202020;
+}
+.navbar_link:hover{
+  text-shadow: 0px 0px 10px #000;
+  color: #000;
+}
+
+.header_logo{
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+
+
+.navbar_search_div{
+  display: flex;
+  column-gap: 36px;
+}
+
+.navbar_search{
+  display: flex;
+  align-items: center;
+  column-gap: 27px;
+}
+
+.navbar_search_link{
+  color: #202020;
+  font-size: 17px;
+}
+.navbar_search_link:hover{
+  text-shadow: 0px 0px 10px #000;
+  color: #000;
+}
+.navbar_vector{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  border-left: 1px solid #000;
+  height: 100px;
+}
+.navbar_vector_img{
+  flex-shrink: 0;
 }
